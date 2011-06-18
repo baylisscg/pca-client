@@ -1,0 +1,17 @@
+xml.doc.create_internal_subset('html',nil,nil)
+xml.html("xmlns" => "http://www.w3.org/1999/xhtml",
+         "lang"  =>"en",
+         "xml:lang" => "en" ) do
+  xml.head do
+    xml.title "Subscribe"
+  end
+  xml.body do 
+    xml.text "Manual Subscribe"
+    xml.br
+    xml.form("action"=>"/subscribe", "method"=>"post") do 
+      xml.input "type"=>"url", "name"=>"topic", "placeholder"=>"The Topic URL to subscribe to."
+      xml.input "type"=>"url", "name"=>"hub", "placeholder"=>"The Hub URL."
+      xml.input "type"=>"submit", "value"=>"Subscribe"
+    end
+  end
+end

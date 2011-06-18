@@ -1,0 +1,13 @@
+xml.doc.create_internal_subset('html',nil,nil)
+xml.html("xmlns" => "http://www.w3.org/1999/xhtml",
+         "lang"  =>"en",
+         "xml:lang" => "en" ) do
+  xml.head do
+    xml.title "Hello World"
+  end
+  xml.body do 
+   xml.text "Hello World"
+   xml.br
+   xml.text "I'm HTML5"
+  end
+end
