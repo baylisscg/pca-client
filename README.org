@@ -1,5 +1,5 @@
 * What is it
-This is a simple user side client for [[https://github.com/baylisscg][PCA]]. It's intended to collect notifications from
+This is a simple user side client for [[https://github.com/baylisscg/PCA][PCA]]. It's intended to collect notifications from
 services and subscribe to the appropriate topics on the service's hub using [[https://code.google.com/p/pubsubhubbub][PubSubHubub]].
 
 * Status
@@ -7,4 +7,9 @@ Currently it can receive requests to subscribe via /subscribe, a form it supplie
 URL for manual control, and it will attempt to subscribe to the hub and topic specified
 using /endpoint
 
+* Tasks [0/4]
+** TODO Add backing store for subscriptions.
+** TODO Add backing store for received events.
+** TODO Publish events on the main page.
+** TODO Only accept subscriptions if requested.
 
