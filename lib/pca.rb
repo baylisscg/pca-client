@@ -58,6 +58,11 @@ module PCA
 
     end
 
+    post "/endpoint" do
+      PP.pp request
+      200
+    end
+
     def push_sub_request(url,topic)
       target = URI.parse url
       client = Net::HTTP.new target.host, target.port
